@@ -1,0 +1,17 @@
+{ "name": "surrender-cube"
+, "description": "surrender to the cube!"
+, "version": "0.0.0"
+, "homepage": "https://github.com/dodo/node-surrender-cube"
+, "author": "dodo (https://github.com/dodo)"
+, "repository": {"type": "git", "url": "git://github.com/dodo/node-surrender-cube.git"}
+, "main": "cube.js"
+, "engines": {"node": ">= 0.4.x"}
+, "keywords": ["terminal", "wireframe", "cube", "loading", "indicator"]
+, "scripts": {
+    "prepublish": "cake build"}
+, "dependencies": {
+    "surrender": "*"}
+, "devDependencies": {
+    "muffin": ">= 0.2.6",
+    "coffee-script": ">= 1.2.0"}
+}
