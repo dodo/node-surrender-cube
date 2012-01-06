@@ -7,6 +7,8 @@
 , "main": "cube.js"
 , "engines": {"node": ">= 0.4.x"}
 , "keywords": ["terminal", "wireframe", "cube", "loading", "indicator"]
+, "bin" : {
+    "surrender-cube": "example/spin.js"}
 , "scripts": {
     "prepublish": "cake build"}
 , "dependencies": {
