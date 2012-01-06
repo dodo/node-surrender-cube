@@ -20,5 +20,5 @@ module.exports = (opts) ->
         cube.rotateY(sina)
         cube.rotateZ(sina-cosa)
         do cube.render
-    setInterval(step, 100)
+    return setInterval(step, 100)
 
