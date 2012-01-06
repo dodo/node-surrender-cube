@@ -3,7 +3,9 @@ Cube = require './cube'
 {PI, cos, sin} = Math
 
 module.exports = (opts) -> 
+    opts = {} unless opts
     opts.from = [ [ 0, 3 ], [ 0, 3 ] ] unless opts.from
+    
     cube = new Cube(surrender opts)
     cube.scale(2)
     
