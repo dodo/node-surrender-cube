@@ -2,9 +2,8 @@ surrender = require 'surrender'
 Cube = require './cube'
 {PI, cos, sin} = Math
 
-module.exports = (opts) ->
-    opts = {} unless opts
-    opts.from = [ [ 0, 3 ], [ 0, 3 ] ] unless opts.from
+module.exports = (opts = {}) ->
+    opts.from ?= [ [ 0, 3 ], [ 0, 3 ] ]
 
     cube = new Cube(surrender opts)
     cube.scale(2)
