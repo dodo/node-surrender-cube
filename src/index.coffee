@@ -1,15 +1,18 @@
+{ Animation } = require 'animation'
 surrender = require 'surrender'
 Cube = require './cube'
-{PI, cos, sin} = Math
+{PI, cos, sin, max} = Math
 
 module.exports = (opts = {}) ->
     opts.from ?= [ [ 0, 3 ], [ 0, 3 ] ]
+    i = 0
 
     cube = new Cube(surrender opts)
     cube.scale(2)
 
-    i = 0
-    step = ->
+    animation = new Animation(frame:'100ms')
+    animation.on 'tick', (dt) ->
+
         rad = (i+1) * PI / 180
         i = (++i)%360
         cosa = cos(rad) * 10
@@ -19,5 +22,7 @@ module.exports = (opts = {}) ->
         cube.rotateY(sina)
         cube.rotateZ(sina-cosa)
         do cube.render
-    setInterval(step, 100)
+
+    animation.start()
+
 

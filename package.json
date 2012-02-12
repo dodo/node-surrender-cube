@@ -12,6 +12,7 @@
 , "scripts": {
     "prepublish": "cake build"}
 , "dependencies": {
+    "animation": "*",
     "surrender": "*"}
 , "devDependencies": {
     "muffin": ">= 0.2.6",
