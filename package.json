@@ -1,6 +1,6 @@
 { "name": "surrender-cube"
 , "description": "surrender to the cube!"
-, "version": "0.0.2"
+, "version": "0.0.3"
 , "homepage": "https://github.com/dodo/node-surrender-cube"
 , "author": "dodo (https://github.com/dodo)"
 , "repository": {"type": "git", "url": "git://github.com/dodo/node-surrender-cube.git"}
